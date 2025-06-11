@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    background-color: #ffff;
+}
+
+header img {
+    width: 4em;
+}
+
+header h1 {
+    color: rgb(19, 19, 81);
+}
+
+div.instructions {
+    width: 80%;
+    margin: 0 auto;
+    padding: .5em;
+    box-sizing: border-box;
+    /* background-color: rgb(226, 199, 172); */
+    /* background-color: white; */
+    background-color: rgb(19, 19, 81);
+    color: #ffff;
+    font-size: .8rem;
+}
+
+ul {
+    margin: 1em;
+    padding: 0;
+}
+
+li {
+    /* list-style-type: none; */
+    margin: .5em;
+}
+
+span {
+    font-weight: bold;
+    text-transform: capitalize;
+    display: block;
+    font-size: 1.2rem;
+}
+
+form {
+    margin: 1em;
+    
+}
+
+form input {
+    margin: 0.5em 0;
+}
+
+form button {
+    display: block;
+    margin: 2em auto;
+    padding: 1em 2em;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    background-color: rgb(19, 19, 81);
+    color: white;
+    border: none;
+}
+
+label.required::after {
+    content: "*";
+    color: red;
+    /* width: 1em; */
+}
+
+/* input:required {
+    padding: 5em;
+} */
+
+div.parent, div.player {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    line-height: 3em;
+}
+
+div.player {
+    margin-bottom: 2em;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+label.long {
+    margin-right: 2em;
+}
+
+#med {
+    padding: .5em;
+}

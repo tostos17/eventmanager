@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    background-color: #ffff;
+}
+
+header img {
+    width: 4em;
+}
+
+header h1 {
+    color: rgb(19, 19, 81);
+}
+
+div.instructions {
+    width: 80%;
+    margin: 0 auto;
+    padding: .5em;
+    box-sizing: border-box;
+    /* background-color: rgb(226, 199, 172); */
+    /* background-color: white; */
+    background-color: rgb(19, 19, 81);
+    color: #ffff;
+    font-size: .8rem;
+}
+
+.participants table {
+    width: 50%;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.participants table thead {
+    font-size: 1.2rem;
+}
+
