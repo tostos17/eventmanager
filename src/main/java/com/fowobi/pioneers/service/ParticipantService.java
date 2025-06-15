@@ -52,6 +52,7 @@ public class ParticipantService {
         participant.setPhone(data.getPhone());
 
 
+
         log.info("the date is: {}", data.getDob());
         String[] dateParts = data.getDob().split("-");
         LocalDate date = LocalDate.of(Integer.parseInt(dateParts[0]), Integer.parseInt(dateParts[1]), Integer.parseInt(dateParts[2]));

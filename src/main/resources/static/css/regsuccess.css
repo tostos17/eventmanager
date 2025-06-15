@@ -4,6 +4,10 @@ html, body {
     background-color: #f2f2f2;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -30,3 +34,17 @@ div.instructions {
     color: #ffff;
     font-size: .8rem;
 }
+
+.socials {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 1em;
+}
+
+.socials a i {
+    font-size: 1.5rem;
+}
+
