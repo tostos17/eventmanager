@@ -26,7 +26,7 @@ public class CoreController {
     final ExcelExportService excelExportService;
 
 //    @Value("${max.count}")
-    int maxCount = 7;
+    int maxCount = 15;
 
     public CoreController(ParticipantService participantService, ExcelExportService excelExportService) {
         this.participantService = participantService;
