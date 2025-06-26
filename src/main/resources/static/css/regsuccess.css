@@ -4,11 +4,11 @@ html, body {
     background-color: #f2f2f2;
 }
 
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
-}
+} */
 
-header {
+/* header {
     width: 100%;
     display: flex;
     margin-bottom: 1em;
@@ -21,6 +21,10 @@ header img {
 
 header h1 {
     color: rgb(19, 19, 81);
+} */
+
+div {
+    font-family: 'Roboto', sans-serif;
 }
 
 div.instructions {

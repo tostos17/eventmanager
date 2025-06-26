@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -17,7 +17,7 @@ header img {
 
 header h1 {
     color: rgb(19, 19, 81);
-}
+} */
 
 div.instructions {
     width: 80%;

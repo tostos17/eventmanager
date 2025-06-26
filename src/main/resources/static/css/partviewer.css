@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -17,7 +17,7 @@ header img {
 
 header h1 {
     color: rgb(19, 19, 81);
-}
+} */
 
 div.instructions {
     width: 80%;
@@ -29,6 +29,11 @@ div.instructions {
     background-color: rgb(19, 19, 81);
     color: #ffff;
     font-size: .8rem;
+}
+
+.participants h3 {
+    margin: 0 1em;
+    color: #555;
 }
 
 .participants table {
@@ -45,6 +50,7 @@ div.instructions {
 .participants table thead {
     font-size: 1.1rem;
     background-color: rgb(130, 175, 223);
+    text-transform: capitalize;
 }
 
 /* table {
@@ -84,4 +90,8 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+.btn-download button {
+    margin: 0 1em;
+    background-color: #555;
+}
 

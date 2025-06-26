@@ -4,23 +4,7 @@
 <%@ page import="com.fowobi.pioneers.model.Participant" %>
 <%@ page import="com.fasterxml.jackson.databind.ObjectMapper" %>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/partviewer.css">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
-    <script>src="js/downloader.js"</script>
-</head>
-
-<body>
-    <header>
-        <img src="/img/pio_logo.jpeg" alt="pioneers football academy">
-        <h1>PFA Summer Football Clinic</h1>
-    </header>
+    <%@ include file="header.jsp" %>
     <div class="participants">
         <h3>Participants</h3>
         <table>
@@ -54,7 +38,7 @@
             </c:forEach>
         </table>
 
-        <form action="/event/download">
+        <form class="btn-download" action="/event/download">
             <button >Download</button>
         </form>
 
