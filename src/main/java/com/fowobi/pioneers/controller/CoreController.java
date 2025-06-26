@@ -33,13 +33,13 @@ public class CoreController {
         this.excelExportService = excelExportService;
     }
 
-    @GetMapping("/hello")
-    public ModelAndView welcome() {
-        ModelAndView model = new ModelAndView("hello");
-
-
-        return model;
-    }
+//    @GetMapping("/hello")
+//    public ModelAndView welcome() {
+//        ModelAndView model = new ModelAndView("hello");
+//
+//
+//        return model;
+//    }
 
     @GetMapping("/reg")
     public ModelAndView register() {
