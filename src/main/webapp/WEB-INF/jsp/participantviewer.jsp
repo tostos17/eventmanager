@@ -7,6 +7,8 @@
     <%@ include file="header.jsp" %>
     <div class="participants">
         <h3>Participants</h3>
+        <c:choose>
+        <c:when test="${not empty participants}">
         <table>
             <thead>
                 <tr>
@@ -41,6 +43,12 @@
         <form class="btn-download" action="/event/download">
             <button >Download</button>
         </form>
+        </c:when>
+
+        <c:otherwise>
+         <p>There are no registered participants</p>
+         </c:otherwise>
+        </c:choose>
 
 
         <span id="result"></span>
