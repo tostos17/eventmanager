@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="/css/partviewer.css">
     <link rel="stylesheet" href="/css/registration.css">
     <link rel="stylesheet" href="/css/regsuccess.css">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Pioneers Sports Concepts</title>
     <script src="/js/registration.js" ></script>
 </head>
 
