@@ -9,10 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.ByteArrayInputStream;
@@ -103,6 +100,14 @@ public class CoreController {
         ModelAndView model = new ModelAndView("header");
 
         return model;
+    }
+
+    @GetMapping("/dd11/{id}")
+    public ResponseEntity<String> deleteById(@PathVariable(name = "id") long id) {
+        int result = participantService.deleteById(id);
+        String output = result > 0 ? "Deleted Successfully" : "An error occurred";
+
+        return ResponseEntity.ok(output);
     }
 
     private boolean reachedCapacity() {

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -62,4 +63,20 @@ public class ParticipantService {
     }
 
 
+    public int deleteById(long id) {
+
+        int result = 0;
+        try {
+            Optional<Participant> participant = participantRepository.findById(id);
+
+            if(participant.isPresent())
+                participantRepository.delete(participant.get());
+
+            result = 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
 }

@@ -12,6 +12,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>id</th>
                     <th>firstname</th>
                     <th>lastname</th>
                     <th>Age</th>
@@ -21,6 +22,7 @@
             </thead>
             <c:forEach var="m" items="${participants}">
                 <tr>
+                    <td>${m.id}</td>
                     <td>${m.childFirstname}</td>
                     <td>${m.childLastname}</td>
 
