@@ -47,7 +47,7 @@ public class ExcelExportService {
                 row.createCell(0).setCellValue(participant.getId());
                 row.createCell(1).setCellValue(participant.getChildFirstname());
                 row.createCell(2).setCellValue(participant.getChildLastname());
-                row.createCell(3).setCellValue(participant.getDob());
+                row.createCell(3).setCellValue(participant.getDob().toString());
                 row.createCell(4).setCellValue(participant.getGender());
                 row.createCell(5).setCellValue(participant.getMed());
                 row.createCell(6).setCellValue(participant.getFirstname());
