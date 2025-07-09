@@ -23,7 +23,7 @@ public class CoreController {
     final ExcelExportService excelExportService;
 
 //    @Value("${max.count}")
-    int maxCount = 15;
+    int maxCount = 0;
 
     public CoreController(ParticipantService participantService, ExcelExportService excelExportService) {
         this.participantService = participantService;
@@ -111,7 +111,7 @@ public class CoreController {
     }
 
     private boolean reachedCapacity() {
-        return participantService.getAllParticipant().size() >= maxCount;
+        return participantService.getAllParticipant().size() == maxCount;
     }
 
 }
